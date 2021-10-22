@@ -42,4 +42,13 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="SpeakableTextPresentCheck" />
 
+    <TextView
+        android:id="@+id/films"
+        android:layout_width="362dp"
+        android:layout_height="273dp"
+        android:rotationX="0"
+        android:text="TextView"
+        android:translationX="30dp"
+        android:translationY="200dp" />
+
 </FrameLayout>
