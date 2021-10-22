@@ -23,23 +23,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.761"
+        app:layout_constraintVertical_bias="0.787"
         tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
-
-    <EditText
-        android:id="@+id/password"
-        android:layout_width="287dp"
-        android:layout_height="63dp"
-        android:background="@drawable/round"
-        android:backgroundTint="#4F000000"
-        android:ems="10"
-        android:inputType="textPassword"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.55"
-        tools:ignore="SpeakableTextPresentCheck" />
 
     <TextView
         android:id="@+id/textView3"
@@ -53,13 +38,13 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.928" />
+        app:layout_constraintVertical_bias="0.961" />
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="16dp"
         android:fontFamily="@font/nunito_semibold"
         android:text="Password"
         android:textColor="#FFFFFF"
@@ -73,13 +58,30 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="36dp"
+        android:background="@drawable/round"
         android:onClick="register"
         android:text="Зарегестрироваться"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/password"
-        app:layout_constraintVertical_bias="0.052" />
+        app:layout_constraintVertical_bias="0.061" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="287dp"
+        android:layout_height="63dp"
+        android:background="@drawable/round"
+        android:backgroundTint="#4F000000"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.607"
+        tools:ignore="SpeakableTextPresentCheck" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

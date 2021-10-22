@@ -27,7 +27,7 @@ class MainActivity : AppCompatActivity() {
     fun login(view: View){
         val currentUser = auth.currentUser
         if(currentUser != null){
-            val window = Intent(this@MainActivity, MainPage::class.java)
+            val window = Intent(this@MainActivity, RegisterPage::class.java)
             window.flags = Intent.FLAG_ACTIVITY_CLEAR_TASK.or(Intent.FLAG_ACTIVITY_NEW_TASK)
             startActivity(window)
         }

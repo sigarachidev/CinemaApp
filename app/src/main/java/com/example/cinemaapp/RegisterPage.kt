@@ -1,12 +1,17 @@
 package com.example.cinemaapp
 
+import android.app.Activity
 import android.content.Intent
+import android.graphics.ImageDecoder
+import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.provider.MediaStore
 import android.util.Log
 import android.view.View
 import android.widget.EditText
 import android.widget.Toast
+import androidx.activity.result.contract.ActivityResultContracts
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
@@ -19,6 +24,7 @@ class RegisterPage : AppCompatActivity() {
 
         auth = Firebase.auth
     }
+
 
     fun register(view: View){
         val email = findViewById<EditText>(R.id.email).text.toString()
