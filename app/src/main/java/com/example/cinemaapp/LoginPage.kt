@@ -3,7 +3,9 @@ package com.example.cinemaapp
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.view.View
+import android.widget.EditText
 import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
@@ -20,8 +22,14 @@ class LoginPage : AppCompatActivity() {
     }
 
     fun auth(view: View){
-        val email = R.id.email.toString()
-        val password = R.id.password.toString()
+        val email = findViewById<EditText>(R.id.email).text.toString()
+        val password = findViewById<EditText>(R.id.password).text.toString()
+
+        if(email.isEmpty() || password.isEmpty()){
+            Toast.makeText(baseContext, "Поля не должны быть пустыми", Toast.LENGTH_LONG).show()
+            return
+        }
+
         auth.signInWithEmailAndPassword(email, password)
             .addOnCompleteListener(this) {task ->
                 if(task.isSuccessful){
